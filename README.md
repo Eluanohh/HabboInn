@@ -1,0 +1,6 @@
+-Abre o termninal
+-execute o comando "npm i", mas se for no Yarn "yarn i"
+-Depois, no terminal novamente executar o comando "npm run dev"
+-ter a extensão ThunderClient instalado no VS CODE STUDIO
+-Inserir o link do tal localhost
+-execute cada passo (GET, POST, PUT, UPDATE, DELETE)
