@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://images7.alphacoders.com/362/362619.jpg");
+  background-image: url("imagens/back.png");
   background-size: cover;
   height: 100%;
 }
@@ -7,6 +7,18 @@ body {
 .titulo {
   text-align: center;
   color: white;
-  font-size: 26px;
+  font-size: 45px;
+  margin-top: 15px;
+  text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+  font-family: 'Brush Script MT', cursive;
+
+}
+
+.subtitulo {
+  text-align: center;
+  color: white;
+  font-size: 20px;
   margin-top: 10px;
+  text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+
 }
