@@ -1,0 +1,12 @@
+body {
+  background-image: url("https://images7.alphacoders.com/362/362619.jpg");
+  background-size: cover;
+  height: 100%;
+}
+
+.titulo {
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  margin-top: 20px;
+}
