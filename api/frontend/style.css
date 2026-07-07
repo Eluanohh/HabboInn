@@ -90,12 +90,16 @@ body {
     border: none;
     color: white;
     font-size: 20px;
-    outline: black;
+    outline: rgb(0, 0, 0);
 }
 
 .input-box input::-webkit-calendar-picker-indicator{
     filter: invert(1);
     cursor: pointer;
+}
+
+.select-hospedes{
+    color: rgb(0, 0, 0);
 }
 
 .btn-reserva{
