@@ -1,6 +1,9 @@
 body {
   background-image: url("imagens/back.png");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: right top;
+  background-attachment: fixed;
   height: 100%;
 }
 
@@ -39,12 +42,12 @@ body {
 }
 
 .botao-1 {
-    background-color: #4CAF50;
+    background-color: #b89a6e;
     color: white;
 }
 
 .botao-1:hover {
-    background-color: #a4b600;
+    background-color: #a17128;
 }
 
 .botao-2 {
