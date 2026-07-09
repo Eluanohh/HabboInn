@@ -119,3 +119,73 @@ body {
 .btn-reserva:hover{
     background: #a8874d;
 }
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+header{
+    background: #068372;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+main{
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-quartos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.caixa{
+    width: 300px;
+    background: #a17128;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.caixa img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.caixa h2{
+    margin: 15px 0;
+}
+
+.caixa p{
+    padding: 0 15px;
+}
+
+.caixa button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
