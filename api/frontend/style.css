@@ -29,6 +29,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 15px;
+    margin-top: 15px;
+
 }
 
 .btn {
@@ -38,12 +40,13 @@ body {
     border-radius: 6px;
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease; /* Efeito suave ao passar o mouse */
+    transition: all 0.3s ease;
 }
 
 .botao-1 {
     background-color: #b89a6e;
     color: white;
+    margin-top: 15px;
 }
 
 .botao-1:hover {
