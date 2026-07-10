@@ -1,11 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contato - Refúgio Serra da Mantiqueira</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121d1a; /* Fundo escuro baseado no seu hotel */
+            color: #ffffff;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d4af37; /* Dourado institucional */
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+
+        .contact-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .contact-info, .contact-form {
+            flex: 1;
+            min-width: 300px;
+            background: #1a2e29; /* Verde escuro dos seus painéis */
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #2d4a42;
+        }
+
+        h2 {
+            color: #d4af37;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            color: #cfd8d6;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #008f6b; /* Verde dos seus botões */
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+            text-align: center;
+            transition: background 0.3s;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #006c51;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #d4af37;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #2d4a42;
+            background-color: #121d1a;
+            color: white;
+            border-radius: 5px;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #d4af37;
+        }
+
+        .btn-submit {
+            background-color: #d4af37;
+            color: #121d1a;
+            border: none;
+            padding: 12px 25px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #b8952e;
+        }
+
+        .btn-back {
+            display: block;
+            width: 150px;
+            margin: 40px auto 0 auto;
+            background-color: #2d4a42;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <div class="container">
+        <h1>Fale Conosco</h1>
+
+        <div class="contact-wrapper">
+            <!-- Coluna de Informações / WhatsApp -->
+            <div class="contact-info">
+                <h2>Atendimento Direto</h2>
+                <p>Para confirmar sua disponibilidade e fechar sua reserva sem burocracia, fale com nossa equipe de atendimento exclusiva via WhatsApp.</p>
+                
+                <!-- Substitua o número abaixo pelo do hotel -->
+                <a href="https://wa.me." target="_blank" class="btn-whatsapp">
+                    Conversar no WhatsApp
+                </a>
+
+                <h2 style="margin-top: 40px;">Localização & Dados</h2>
+                <p><strong>Endereço:</strong> Av. Principal da Serra, Km 15 - Serra da Mantiqueira, SP</p>
+                <p><strong>E-mail:</strong> reservas@suasitehotel.com.br</p>
+                <p style="font-size: 0.85rem; color: #889996; margin-top: 20px;">Hotel Mantiqueira S.A. | CNPJ: 00.000.000/0001-00</p>
+            </div>
+
+            <!-- Coluna do Formulário -->
+            <div class="contact-form">
+                <h2>Envie uma Mensagem</h2>
+                <form action="/api/frontend/enviarContato.html" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail Corporativo / Pessoal</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Como podemos ajudar?</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva sua dúvida ou solicitação de reserva..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+
+        <a href="verificarDisp.html" class="btn-back">Voltar</a>
+    </div>
+
 </body>
 </html>

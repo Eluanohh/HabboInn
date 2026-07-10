@@ -53,18 +53,6 @@ body {
     background-color: #a17128;
 }
 
-.botao-2 {
-    background-color: transparent;
-    text-decoration: underline;
-    color: #ffffff;
-    border: 2px solid #cccccc00;
-}
-
-.botao-2:hover {
-    background-color: #f0f0f000;
-    border-color: #ffae00;
-}
-
 .reserva{
     width: 90%;
     max-width: 1100px;
