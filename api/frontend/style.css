@@ -99,7 +99,7 @@ body {
 .btn-reserva{
     width: 250px;
     border: none;
-    background: #b89a63;
+    background: #068372;
     color: white;
     font-weight: bold;
     font-size: 15px;
@@ -108,7 +108,7 @@ body {
 }
 
 .btn-reserva:hover{
-    background: #a8874d;
+    background: #055c5a;
 }
 
 
