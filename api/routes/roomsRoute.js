@@ -9,6 +9,8 @@ router.get('/:id', roomsController.getItemById);
 
 router.post('/', roomsController.createItem);
 
+router.post("/disponiveis", roomsController.getAvailableRooms);
+
 router.put('/:id', roomsController.updateItem);
 
 router.delete('/:id', roomsController.deleteItem);

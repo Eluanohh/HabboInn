@@ -17,6 +17,7 @@ CREATE TABLE IF NOT EXISTS quartos (
     id_quarto INT AUTO_INCREMENT,
     nome_quarto VARCHAR(100) NOT NULL,
     tipo ENUM('Padrão', 'Suíte') NOT NULL, -- Atende ao RF02 (Filtro de categoria)
+    capacidade INT NOT NULL,
     preco_cambios INT NOT NULL,            -- Moeda temática do projeto
     avaliacao DECIMAL(2,1) NOT NULL,       -- Nota do quarto (ex: 4.5)
     PRIMARY KEY (id_quarto)
@@ -48,16 +49,17 @@ INSERT INTO clientes (nome_usuario, email) VALUES
 ('LadyGagaRetro', 'gaga@pixel.com');
 
 -- Inserindo os 6 Quartos Fixos do Projeto (Respeitando a regra do seu escopo)
-INSERT INTO quartos (nome_quarto, tipo, preco_cambios, avaliacao) VALUES 
-('Quarto Pixel Inicial', 'Padrão', 15, 4.2),
-('Suíte Executiva Habbo', 'Suíte', 45, 4.9),
-('Lounge Retrô Confort', 'Padrão', 20, 4.5),
-('Suíte Presidencial de Blocos', 'Suíte', 70, 5.0),
-('Quarto Vintage Econômico', 'Padrão', 12, 3.8),
-('Estúdio Cyber Neon', 'Suíte', 35, 4.6);
+INSERT INTO quartos
+(nome_quarto, tipo, capacidade, preco_cambios, avaliacao)
+VALUES
+('Quarto Pixel Inicial', 'Padrão', 2, 15, 4.2),
+('Suíte Executiva Habbo', 'Suíte', 4, 45, 4.9),
+('Lounge Retrô Confort', 'Padrão', 3, 20, 4.5),
+('Suíte Presidencial de Blocos', 'Suíte', 6, 70, 5.0),
+('Quarto Vintage Econômico', 'Padrão', 2, 12, 3.8),
+('Estúdio Cyber Neon', 'Suíte', 4, 35, 4.6);
 
 -- Inserindo Reservas de Exemplo (Para testar a Área de Visualização - RF05)
 INSERT INTO reservas (data_checkin, data_checkout, status_reserva, id_cliente, id_quarto) VALUES 
 ('2026-07-10', '2026-07-15', 'Confirmada', 1, 2),
 ('2026-07-20', '2026-07-22', 'Pendente', 2, 1); -- 'Pendente' simula o quarto bloqueado temporariamente
- 
