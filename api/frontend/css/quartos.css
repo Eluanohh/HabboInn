@@ -1,0 +1,103 @@
+main{
+    width: 100%;
+    padding: 40px;
+}
+
+.filtros{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filtros input,
+.filtros button{
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.filtros input{
+    background: white;
+}
+
+#buscar{
+    background: #068372;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#buscar:hover{
+    background: #056659;
+}
+
+.container-quartos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.caixa{
+    width: 330px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+    transition: .3s;
+}
+
+.caixa:hover{
+    transform: translateY(-8px);
+}
+
+.caixa img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.caixa:hover img{
+    transform: scale(1.08);
+}
+
+.caixa h2{
+    color: #222;
+    margin: 18px;
+    font-size: 23px;
+}
+
+.caixa p{
+    color: #555;
+    margin: 8px 18px;
+    line-height: 1.5;
+}
+
+.caixa button{
+    width: calc(100% - 36px);
+    margin: 20px 18px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #068372;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.caixa button:hover{
+    background: #055c5a;
+}
+
+.botao-1{
+    display: block;
+    margin: 50px auto;
+}

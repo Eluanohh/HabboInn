@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Habbolnn</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <body>
     <div class="logo">
       <div class="login-container">
     <a href="login.html" class="btn-login">Login</a>
@@ -29,36 +30,35 @@
       <button class="btn botao-1">Fazer Reserva ❯</button>
     </div>
 
-  <div class="reserva">
-    <div class="campo">
-      <label>CHECK-IN</label>
-      <div class="input-box">
-        <input type="date">
-      </div>
+  <div class="campo">
+    <label>CHECK-IN</label>
+    <div class="input-box">
+        <input type="date" id="checkin">
     </div>
+</div>
 
     <div class="campo">
-      <label>CHECK-OUT</label>
-      <div class="input-box">
-        <input type="date">
-      </div>
+    <label>CHECK-OUT</label>
+    <div class="input-box">
+        <input type="date" id="checkout">
     </div>
+</div>
 
     <div class="campo">
-      <label>HÓSPEDES</label>
-      <div class="input-box">
-        <select>
-          <option style="color: rgb(0, 0, 0);">1 adulto</option>
-          <option style="color: rgb(0, 0, 0);">2 adultos</option>
-          <option style="color: rgb(0, 0, 0);">2 adultos + 1 criança</option>
-          <option style="color: rgb(0, 0, 0);">2 adultos + 2 crianças</option>
+    <label>HÓSPEDES</label>
+    <div class="input-box">
+        <select id="pessoas">
+            <option value="1">1 adulto</option>
+            <option value="2">2 adultos</option>
+            <option value="3">2 adultos + 1 criança</option>
+            <option value="4">2 adultos + 2 crianças</option>
         </select>
-      </div>
     </div>
+</div>
 
-    <button class="btn-reserva" onclick="window.location.href='verificarDisp.html'">
-      VERIFICAR <br> DISPONIBILIDADE
-    </button>
+    <button class="btn-reserva" id="btn-reserva">
+    VERIFICAR <br> DISPONIBILIDADE
+</button>
     <div>
       <a href=""></a>
     </div>
@@ -67,6 +67,6 @@
     <a href="https://wa.me/5511999999999" class="icone-flutuante" >
       <img src="./imagens/WhatsApp_icon.png" alt="WHATSAPP" width="30px" height="30px"></img>
     </a>
-    <script src="server.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -4,18 +4,18 @@ async function login(req,res){
 
     try{
 
-        const {email,senha} = req.body;
+        const {email, senha} = req.body;
 
-        const [usuario] = await pool.query(
+        const [clientes] = await pool.query(
         `
         SELECT *
-        FROM usuarios
-        WHERE email=?
-        AND senha=?
+        FROM clientes
+        WHERE email=? AND
+        senha=?
         `,
-        [email,senha]);
+        [email, senha]);
 
-        if(usuario.length==0){
+        if(clientes.length==0){
 
             return res.status(401).json({
 
@@ -29,7 +29,7 @@ async function login(req,res){
         return res.status(200).json({
 
             success:true,
-            usuario:usuario[0]
+            usuario:clientes[0]
 
         });
 
@@ -48,6 +48,42 @@ async function login(req,res){
 
 }
 
+async function register(req, res) {
+
+    try {
+
+        const { nome_usuario, email, senha } = req.body;
+
+        await pool.query(
+            `INSERT INTO clientes
+            (nome_usuario, email, senha)
+            VALUES (?, ?, ?)`,
+            [nome_usuario, email, senha]
+        );
+
+        return res.status(201).json({
+
+            success: true,
+            message: "Usuário cadastrado com sucesso."
+
+        });
+
+    } catch (err) {
+
+        console.log(err);
+
+        return res.status(500).json({
+
+            success: false,
+            message: "Erro interno."
+
+        });
+
+    }
+
+}
+
 module.exports={
-login
+login,
+register
 };

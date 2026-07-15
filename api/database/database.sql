@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS clientes (
     id_cliente INT AUTO_INCREMENT,
     nome_usuario VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(30) NOT NULL,
     PRIMARY KEY (id_cliente)
 );
 
@@ -43,10 +44,10 @@ CREATE TABLE IF NOT EXISTS reservas (
 -- ==========================================
 
 -- Inserindo Clientes Iniciais
-INSERT INTO clientes (nome_usuario, email) VALUES 
-('HackerPixel', 'pixel@habbo.com'),
-('BobBaiano', 'bob@hotel.com'),
-('LadyGagaRetro', 'gaga@pixel.com');
+INSERT INTO clientes (nome_usuario, email, senha) VALUES 
+('HackerPixel', 'pixel@habbo.com', 'HackerP'),
+('BobBaiano', 'bob@hotel.com', 'BOBB'),
+('LadyGagaRetro', 'gaga@pixel.com', 'LADYG');
 
 -- Inserindo os 6 Quartos Fixos do Projeto (Respeitando a regra do seu escopo)
 INSERT INTO quartos

@@ -1,0 +1,124 @@
+.logo{
+    width:70px;
+    margin-left:40px;
+}
+
+.titulo{
+    text-align:center;
+    font-size:55px;
+    margin-top:60px;
+    text-shadow:0 4px 10px rgba(0,0,0,.5);
+    font-family:"Cormorant Garamond",serif;
+}
+
+.subtitulo{
+    text-align:center;
+    font-size:22px;
+    margin-top:20px;
+    text-shadow:0 4px 10px rgba(0,0,0,.5);
+}
+
+.container-botoes{
+    display:flex;
+    justify-content:center;
+    margin-top:25px;
+}
+
+.reserva{
+    width:90%;
+    max-width:1100px;
+    margin:70px auto;
+    display:flex;
+    background:#1c1815;
+    color:white;
+}
+
+.campo{
+    flex:1;
+    padding:20px 30px;
+    display:flex;
+    flex-direction:column;
+    border-right:1px solid rgba(255,255,255,.15);
+}
+
+.campo:last-child{
+    border-right:none;
+}
+
+.campo label{
+    color:#b89a63;
+    font-size:12px;
+    margin-bottom:10px;
+    letter-spacing:2px;
+}
+
+.input-box input,
+.input-box select{
+    width:100%;
+    border:none;
+    background:transparent;
+    color:white;
+    font-size:18px;
+    outline:none;
+}
+
+.input-box input::-webkit-calendar-picker-indicator{
+    filter:invert(1);
+}
+
+.btn-reserva{
+    width:260px;
+    border:none;
+    background:#068372;
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-reserva:hover{
+    background:#055c5a;
+}
+
+.login-container{
+    position:absolute;
+    top:20px;
+    right:30px;
+}
+
+.btn-login{
+    text-decoration:none;
+    background:#8B5E3C;
+    color:white;
+    padding:10px 22px;
+    border-radius:8px;
+    border:2px solid white;
+    transition:.3s;
+}
+
+.btn-login:hover{
+    background:#6d472d;
+}
+
+.icone-flutuante{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:white;
+    font-size:30px;
+    box-shadow:0 5px 10px rgba(0,0,0,.3);
+    transition:.3s;
+}
+
+.icone-flutuante:hover{
+    transform:scale(1.1);
+}
