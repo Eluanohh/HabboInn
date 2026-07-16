@@ -14,7 +14,7 @@ btnLogin.addEventListener("click", async (event) => {
 
     try {
 
-        const resposta = await fetch("http://localhost:3031/auth/login", {
+        const resposta = await fetch("http://localhost:3030/auth/login", {
 
             method: "POST",
 
